@@ -33,4 +33,20 @@ fn main() {
     let s3 = s2; // move (not shallow copy)
     // println!("{s2}"); // this would cause a compile error
     println!("{s3}");
+
+    // scope and assignment
+    // let mut s4 = String::from("hello");
+    // s4 = String::from("ahoy");
+    // println!("{s4}, world!");
+
+    // Variables and Data Interacting with Clone
+    let s5 = String::from("hello");
+    let s6 = s5.clone(); // deep copy
+    println!("s5 = {s5}, s6 = {s6}");
+
+    // Stack-Only Data: Copy
+
+    let r = 5;
+    let k = r;
+    println!("r = {r}, k = {k}");
 }

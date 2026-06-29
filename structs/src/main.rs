@@ -45,6 +45,15 @@ fn main() {
     println!("User4 Email: {}", user4.email);
     println!("User4 Sign-in Count: {}", user4.sign_in_count);
     println!("User4 Active: {}", user4.active);
+
+    // tuple struct
+    let black = Color(0, 0, 0);
+    println!("Black: {}, {}, {}", black.0, black.1, black.2);
+
+    // unit-like struct
+
+    let _always_equal = AlwaysEqual;
+    println!("AlwaysEqual struct created successfully.");
 }
 
 struct User {
@@ -71,3 +80,7 @@ fn build_user(email: String, username: String) -> User {
         sign_in_count: 1,
     }
 }
+
+struct Color(i32, i32, i32);
+
+struct AlwaysEqual;

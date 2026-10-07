@@ -28,4 +28,10 @@ fn main() {
     let first_score = scores[1];
 
     println!("{first_score}");
+
+    display_no(5);
+}
+
+fn display_no(x: i32) {
+    println!("{x}")
 }
